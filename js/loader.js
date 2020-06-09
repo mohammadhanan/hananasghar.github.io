@@ -1,0 +1,1 @@
+setTimeout(function(){window.location.href='/html/main.html'},3000);

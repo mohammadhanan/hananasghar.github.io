@@ -1,0 +1,47 @@
+.section-cert {
+  background: #444;
+  height: 100%;
+  overflow: auto;
+}
+.img-area{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.active-img{
+  margin: 30px 15px;
+}
+.line-border{
+  background-color: transparent;
+  opacity: 0.3;
+  height: 3px;
+  width: 100%;
+  margin-top: 95px;
+  border-radius: 25px;
+}
+.single-image img{
+  
+  height: 300px;
+  width: 400px;
+  box-shadow: 0 0 30px grey;
+  transition: all 1s ease;
+}
+.single-image img:hover{
+  box-shadow: none;
+}
+@media (max-width: 600px){
+  .line-border{
+    margin-top: 70px;
+  }
+}
+@media (max-width: 400px){
+  .single-image img{
+    height: 200px;
+    width: 300px;
+  }
+  .line-border{
+    margin-top: 35px;
+  }
+}
